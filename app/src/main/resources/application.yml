@@ -1,0 +1,18 @@
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      auto: false
+      static: us-east-1
+    credentials:
+      access-key: test
+      secret-key: test
+logging:
+  level:
+    root: debug
+    "com.amazonaws.util.EC2MetadataUtils": debug
+aws:
+  endpoint: http://localhost:4566
+  sqs:
+    sample-queue: SampleQueue
